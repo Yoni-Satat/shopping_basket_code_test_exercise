@@ -44,6 +44,11 @@ public class ShoppingBasketTest {
 
     @Test
     public void testCanEmptyBasket() {
-
+        shoppingBasket.addItem(item);
+        shoppingBasket.addItem(item);
+        shoppingBasket.addItem(item);
+        shoppingBasket.addItem(item);
+        shoppingBasket.emptyBasket();
+        assertEquals(0, shoppingBasket.countItems());
     }
 }
