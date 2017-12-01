@@ -14,7 +14,13 @@ public class ItemTest {
 
     @Test
     public void canGetPrice() {
-        item = new Item(30.00);
+        item = new Item(30.00, "record");
         assertEquals(30.00, item.getPrice());
+    }
+
+    @Test
+    public void canGetName() {
+        item = new Item(30.00, "record");
+        assertEquals("record", item.getName());
     }
 }
