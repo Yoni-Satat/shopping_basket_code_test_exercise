@@ -18,11 +18,11 @@ public class ShoppingBasket {
         return items.size();
     }
 
-    public void addItem() {
+    public void addItem(Item item) {
         items.add(item);
     }
 
-    public void removeItem() {
+    public void removeItem(Item item) {
         items.remove(item);
     }
 }

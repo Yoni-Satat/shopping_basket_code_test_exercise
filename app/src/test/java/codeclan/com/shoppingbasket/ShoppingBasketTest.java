@@ -30,14 +30,20 @@ public class ShoppingBasketTest {
 
     @Test
     public void testCanAddItemToShoppingBasket() {
-        shoppingBasket.addItem();
-        assertEquals(1, shoppingBasket.countItems());
+        shoppingBasket.addItem(item);
+        shoppingBasket.addItem(item);
+        assertEquals(2, shoppingBasket.countItems());
     }
 
     @Test
     public void testCanRemoveItem() {
-        shoppingBasket.addItem();
-        shoppingBasket.removeItem();
+        shoppingBasket.addItem(item);
+        shoppingBasket.removeItem(item);
         assertEquals(0, shoppingBasket.countItems());
+    }
+
+    @Test
+    public void testCanEmptyBasket() {
+
     }
 }
