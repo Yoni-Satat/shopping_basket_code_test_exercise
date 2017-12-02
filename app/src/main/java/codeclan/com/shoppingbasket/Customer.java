@@ -8,7 +8,7 @@ public class Customer {
     private boolean loyaltyCard;
 
     public Customer(boolean loyaltyCard) {
-        this.loyaltyCard = false;
+        this.loyaltyCard = loyaltyCard;
     }
 
     public boolean isLoyal() {

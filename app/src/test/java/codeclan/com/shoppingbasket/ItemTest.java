@@ -1,5 +1,6 @@
 package codeclan.com.shoppingbasket;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -12,15 +13,23 @@ import static junit.framework.Assert.assertEquals;
 public class ItemTest {
     Item item;
 
+    @Before
+    public void before() {
+        item = new Item(30.00, "record", 0001);
+    }
+
     @Test
     public void canGetPrice() {
-        item = new Item(30.00, "record");
         assertEquals(30.00, item.getPrice());
     }
 
     @Test
     public void canGetName() {
-        item = new Item(30.00, "record");
         assertEquals("record", item.getName());
+    }
+
+    @Test
+    public void canGetBarcode() {
+        assertEquals(0001, item.getBarcode());
     }
 }

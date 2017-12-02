@@ -20,7 +20,7 @@ public class ShoppingBasketTest {
     @Before
     public void before() {
         shoppingBasket = new ShoppingBasket();
-        item = new Item(30.00, "record");
+        item = new Item(30.00, "record", 0001);
     }
 
     @Test

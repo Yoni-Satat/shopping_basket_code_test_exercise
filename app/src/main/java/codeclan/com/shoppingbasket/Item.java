@@ -7,10 +7,12 @@ package codeclan.com.shoppingbasket;
 public class Item {
     private double price;
     private String name;
+    private int barcode;
     
-    public Item(double price, String name) {
+    public Item(double price, String name, int barcode) {
         this.price = price;
         this.name = name;
+        this.barcode = barcode;
     }
 
     public double getPrice() {
@@ -19,5 +21,9 @@ public class Item {
 
     public String getName() {
         return name;
+    }
+
+    public int getBarcode() {
+        return barcode;
     }
 }
