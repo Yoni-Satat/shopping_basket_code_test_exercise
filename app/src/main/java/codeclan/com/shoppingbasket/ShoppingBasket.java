@@ -8,7 +8,6 @@ import java.util.ArrayList;
 
 public class ShoppingBasket {
     private ArrayList<Item> items;
-    Item item;
 
     public ShoppingBasket() {
         this.items = new ArrayList<>();
@@ -28,5 +27,9 @@ public class ShoppingBasket {
 
     public void emptyBasket() {
         items.clear();
+    }
+
+    public ArrayList<Item> getItems() {
+        return this.items;
     }
 }
